@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Heading -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Simple Interest Calculator</h1>
+        </div>
+      </div>
+      <!-- Form Entry -->
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="form-group">
+              <label class="form-group">Principal</label>
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                id="principal"
+                placeholder="Enter the principal amount"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-group"> Years</label>
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                id="years"
+                placeholder="Enter the no of years"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-group"> Rate of Interest</label>
+              <input
+                class="form-control"
+                type="number"
+                min="0"
+                id="rate"
+                placeholder="Enter the rate of interest"
+              />
+            </div>
+            <button class="btn btn-primary" type="button" onClick="display()">
+              Calculate
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Display Results -->
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <h1 id="res">$</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
